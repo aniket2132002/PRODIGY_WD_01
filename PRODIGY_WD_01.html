@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Navigation Menu</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .left img{
+
+    width: 170px;
+    position: fixed;
+    top: 15px;
+    left: 20px;
+/*filter: invert(100%);*/
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 23px;
+    background-color: #3056d3;
+    padding: 40px 10px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline;
+  }
+
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+  }
+
+  nav ul li a:hover {
+    color: #14130e;
+    font-weight: bold;
+  }
+
+  .scrolled {
+    background-color: #ffffff;
+    opacity: 0.5;
+    color: #000000;
+  }
+  .scrolled ul li a{
+    color: black;
+
+  }
+  .scrolled ul li a:hover{
+    color:#3056d3;
+  }
+  .container{
+    height: 200px;
+  }
+  
+ 
+
+  #home {
+    height: 70px;
+    /* font-size: 40px; */
+    background-color: #3056d3;
+    color: #4891eb;
+    text-align: center;
+    padding: 170px;
+    font-family: sans-serif;
+    
+  }
+  #home h1{
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  #home p{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 3px;
+    color: #ffffff;
+  }
+  #about {
+        float: left;
+				width: 50%;
+				background-repeat: no-repeat;
+        
+  }
+  /* #about .primary {
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 20px;
+    color: #3056d3;
+    display: inline;
+
+  } */
+
+  #about h3{
+
+    /* background-color: #3056d3; */
+    color: #3056d3;
+    display: flex;
+    padding-top: 100px;
+    padding-left: 40px;
+  }
+  #about h1{
+    padding-left: 40px;
+    
+    height: 15px;
+  }
+
+  #about p{
+    padding-left: 40px;
+    padding-top: 100px;
+    height: 0px;
+    padding-right:10px ;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+
+    
+    /* border: 2px solid red; */
+  }
+  #image img {
+    padding-top: 70px;
+  
+  }
+
+  .container3{
+    padding-top: 550px;
+    height: 750px;
+    
+  }
+  .container3 h3{
+    text-align: center;
+    padding-top:100px;
+    font-size: 20px;
+    color: #3056d3;
+  }
+  .container3 h1{
+    text-align: center;
+    font-size: 50px;
+  }
+
+   .container3 p{
+    text-align: center;
+    color: darkgrey;
+    font-size: 18px;
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif ;
+  }
+
+  #FAQs {
+    padding-top: 0px;
+    height: 1px;
+
+  }
+
+  #Contact{
+    padding-top: 800px;
+    height: 1200px;
+    padding-left: 150px;
+
+  }
+
+
+  
+  
+
+  
+</style>
+</head>
+<body>
+<nav id="navbar">
+  <div class="left">
+    <img src="https://prodigyinfotech.dev/assets/images/logo/logo.svg">
+
+  </div>
+  <ul >
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#Internships">Internships</a></li>
+    <li><a href="#FAQs">Features</a></li>
+    <!-- <li><a href="#Contact">Contact</a></li>
+    <li><a href="#Verify">Verify</a></li> -->
+  </ul>
+</nav>
+
+<!-- <div class="content">
+  <p>Prodigy InfoTech</p>
+  <h5>Providing World Class E-Learning Experince with Real world Internships</h5>
+</div>------------------------------- -->
+
+<section id="home">
+  <h1 class="h.primary">Prodigy InfoTech</h1>
+  <p>Providing World Class E-Learning Experince with Real world</p><p> Internships</p>
+</section>
+
+<!-- <section id="about">
+  <h1 class="primary">About Us</h1>
+  <h2>Transforming the Way People Learn</h2>
+  <p>Our mission is to create innovative and accessible learning solutions that empower people of all ages and backgrounds to achieve their full potential. Whether you're a student looking to improve your grades, a professional seeking to upskill, or an organization looking to enhance employee training, we have the tools and resources you need to succeed.
+
+    If you're looking for an innovative and dynamic learning experience that will help you achieve your goals and unlock your full potential, we invite you to join us on this exciting journey. Together, we can transform the way we learn and create a better future for all.</p>
+  <img src="https://prodigyinfotech.dev/assets/images/about/about-image.svg" alt="image">
+</section> --> 
+<div class="container">
+  <div id="about" class="item">
+    <h3>About us</h3>
+    <h1>Transforming the Way</h1><h1> People Learn</h1>
+    <P>Our mission is to create innovative and accessible learning solutions that empower people of all ages and backgrounds to achieve their full potential. Whether you're a student looking to improve your grades, a professional seeking to upskill, or an organization looking to enhance employee training, we have the tools and resources you need to succeed. </P>
+    <p>If you're looking for an innovative and dynamic learning experience that will help you achieve your goals and unlock your full potential, we invite you to join us on this exciting journey. Together, we can transform the way we learn and create a better future for all.</p>
+    <p id="firstpara" class="para"></p>
+  </div>	
+
+  <div id="image" class="item">
+    <img src="https://prodigyinfotech.dev/assets/images/about/about-image.svg" alt="image">
+    <!-- <h3  >img</h3> -->
+    
+    <p id="secondpara" class="para"></p>
+  </div>	
+</div>
+
+<div class="container3">
+  <div id="Internships">
+    <h3>Internships</h3>
+    <h1>Our Internships</h1>
+    <p>Our internships are available in a range of fields, including</p> <p>Web Development, Machine Learning, Data Science, and more.</p> <p> Interns will have the chance to work on real-world projects, collaborate </p><p>with teams, and gain valuable insights into their respective</p><p>industries.</p> 
+    
+  </div>
+  <div>
+    <img src="C:\Users\HP\Pictures\Screenshots\Screenshot 2024-03-19 180827.png" alt="">
+  </div>
+
+  <div id="FAQs">
+    <h3>Features </h3>
+    <img src="C:\Users\HP\Pictures\Screenshots\Screenshot 2024-03-19 211020.png" alt="image">
+  </div>
+
+  <!-- <div id="Contact">
+    <h3>Contact</h3>
+    <img src="c:\Users\HP\Pictures\Screenshots\Screenshot 2024-03-19 211420.png" alt="image">
+  </div>
+
+  <div id="">
+    <h3>Verify</h3>
+    <img src="C:\Users\HP\Pictures\Screenshots\Screenshot 2024-03-19 212744.png" alt="image">
+  </div> -->
+
+<script>
+  window.addEventListener('scroll', function() {
+    var nav = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
+</body>
+</html>
